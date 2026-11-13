@@ -1,25 +1,25 @@
 # Hotel Booking Cancellations: Analyzing Revenue Losses & Building a Power BI Dashboard
 
-## 📊 Quick Summary
+## Quick Summary
 A luxury hotel chain was losing significant revenue ($16.73M) due to unpredicted booking cancellations. I built an analytics workflow using Python to clean 119,390 transaction records and designed an interactive Power BI dashboard to help management identify cancellation patterns, track seasonal drops, and adjust booking rules.
 
 ---
 
-## 🛠️ The Tech Stack
+## The Tech Stack
 - **Data Prep:** Python (Pandas)
 - **Visuals & Dashboard:** Power BI Desktop & Service
 - **Core Approach:** Descriptive Statistics & 4Vs of Big Data Audit
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 - `/scripts/hotel_analysis.py` -> The Python data preparation script
 - `/visuals/assignment 1.pbix` -> The actual interactive Power BI dashboard file
 - `/visuals/dashboard_screenshot.png` -> Preview image of the finished dashboard layout
 
 ---
 
-## 🧼 How the Data Was Prepared (Python Pipeline)
+## How the Data Was Prepared (Python Pipeline)
 Before building the dashboard, I used Python to fix data quality issues in the raw dataset:
 - **Type Conversion:** Converted stays, guests, and pricing rows into strict numeric formats.
 - **Handling Missing Values:** Filled null values in the `children`, `babies`, and `lead_time` columns with 0.
@@ -31,7 +31,7 @@ Before building the dashboard, I used Python to fix data quality issues in the r
 
 ---
 
-## 💡 Key Business Insights Found
+## Key Business Insights Found
 - **The Churn Baseline:** 37% of all hotel reservations get canceled, heavily draining operational revenue.
 - **Longer Planning = Higher Churn:** Canceled bookings have a much longer average lead time (144.85 days) compared to confirmed bookings (104 days).
 - **High-Value Exposure:** The average daily rate (ADR) for canceled bookings is higher ($104.96) than the overall average ($101.83). The largest single canceled booking hit $5,400.
@@ -40,7 +40,7 @@ Before building the dashboard, I used Python to fix data quality issues in the r
 
 ---
 
-## 🌐 The Power BI Dashboard Capabilities
+## The Power BI Dashboard Capabilities
 The interactive dashboard provides the management team with a clean visual toolkit:
 - **Main KPI Counters:** Tracks Total Bookings (119K), Cancellations (44K), Corporate Cancellation Rate (37%), and $16.73M in Lost Revenue at a single glance.
 - **Dynamic Filters:** Allows users to slice data instantly by Hotel Type, Arrival Month, and Customer Type (revealing that City Hotels face the highest volatility).
@@ -48,7 +48,7 @@ The interactive dashboard provides the management team with a clean visual toolk
 
 ---
 
-## 📋 Actionable Next Steps for Management
+## Actionable Next Steps for Management
 1. **Change Pricing Rules:** Offer discounted, strict non-refundable booking rates for transient customers to reduce baseline cancellations.
 2. **Stricter Peak Rules:** Introduce stricter cancellation deadlines and down-payments during high-churn months (April, May, and June).
 3. **Optimize Direct Bookings:** Create special bundle deals for direct website reservations to lower our dependence on high-churn third-party online platforms.
